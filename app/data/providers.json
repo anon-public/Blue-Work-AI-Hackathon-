@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Ali AC Services",
+    "category": "AC technician",
+    "area": "G-13",
+    "rating": 4.8,
+    "distance_km": 2.1,
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Bilal Plumbing",
+    "category": "Plumber",
+    "area": "F-7",
+    "rating": 4.5,
+    "distance_km": 5.3,
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Salman Electricians",
+    "category": "Electrician",
+    "area": "G-10",
+    "rating": 4.9,
+    "distance_km": 1.2,
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Cool Breeze HVAC",
+    "category": "AC technician",
+    "area": "G-11",
+    "rating": 4.2,
+    "distance_km": 3.4,
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Clean Sweep Home",
+    "category": "Home Cleaning",
+    "area": "F-11",
+    "rating": 4.7,
+    "distance_km": 4.0,
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Master Woodworks",
+    "category": "Carpenter",
+    "area": "G-9",
+    "rating": 4.6,
+    "distance_km": 2.8,
+    "available": false
+  },
+  {
+    "id": 7,
+    "name": "Speedy Fix Plumbers",
+    "category": "Plumber",
+    "area": "E-11",
+    "rating": 4.1,
+    "distance_km": 6.1,
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Bright Spark Electric",
+    "category": "Electrician",
+    "area": "DHA Phase 2",
+    "rating": 4.9,
+    "distance_km": 12.5,
+    "available": true
+  },
+  {
+    "id": 9,
+    "name": "Chill Zone AC Repair",
+    "category": "AC technician",
+    "area": "Bahria Town",
+    "rating": 4.4,
+    "distance_km": 15.2,
+    "available": false
+  },
+  {
+    "id": 10,
+    "name": "Imran Handyman",
+    "category": "General Handyman",
+    "area": "G-13",
+    "rating": 4.3,
+    "distance_km": 1.8,
+    "available": true
+  },
+  {
+    "id": 11,
+    "name": "A1 Cleaning Services",
+    "category": "Home Cleaning",
+    "area": "F-7",
+    "rating": 4.8,
+    "distance_km": 7.2,
+    "available": true
+  },
+  {
+    "id": 12,
+    "name": "Royal Carpentry",
+    "category": "Carpenter",
+    "area": "I-8",
+    "rating": 4.5,
+    "distance_km": 4.5,
+    "available": true
+  },
+  {
+    "id": 13,
+    "name": "Fast Leak Repairs",
+    "category": "Plumber",
+    "area": "G-10",
+    "rating": 3.9,
+    "distance_km": 3.1,
+    "available": true
+  },
+  {
+    "id": 14,
+    "name": "Tariq AC Masters",
+    "category": "AC technician",
+    "area": "F-10",
+    "rating": 4.7,
+    "distance_km": 5.8,
+    "available": false
+  },
+  {
+    "id": 15,
+    "name": "Safe Wire Electricians",
+    "category": "Electrician",
+    "area": "E-7",
+    "rating": 5.0,
+    "distance_km": 8.4,
+    "available": true
+  },
+  {
+    "id": 16,
+    "name": "Gleam & Glow Cleaning",
+    "category": "Home Cleaning",
+    "area": "G-8",
+    "rating": 4.6,
+    "distance_km": 2.5,
+    "available": true
+  },
+  {
+    "id": 17,
+    "name": "Woodcrafters Inc",
+    "category": "Carpenter",
+    "area": "F-6",
+    "rating": 4.2,
+    "distance_km": 9.1,
+    "available": false
+  },
+  {
+    "id": 18,
+    "name": "Zafar Plumbing Experts",
+    "category": "Plumber",
+    "area": "I-9",
+    "rating": 4.8,
+    "distance_km": 3.7,
+    "available": true
+  },
+  {
+    "id": 19,
+    "name": "Prime AC Solutions",
+    "category": "AC technician",
+    "area": "G-14",
+    "rating": 4.1,
+    "distance_km": 2.9,
+    "available": true
+  },
+  {
+    "id": 20,
+    "name": "Elite Home Repairs",
+    "category": "General Handyman",
+    "area": "F-8",
+    "rating": 4.9,
+    "distance_km": 5.5,
+    "available": true
+  }
+]
