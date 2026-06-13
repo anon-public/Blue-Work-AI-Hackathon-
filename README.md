@@ -68,7 +68,8 @@ npx expo start --clear
 
 | Screen 1 | Screen 2 |
 | :---: | :---: |
-|   <img width="480" height="750" alt="image" src="https://github.com/user-attachments/assets/fbee9b48-ed1f-405a-ab2f-4b5b13676ff6" /> |   <img width="494" height="750" alt="image" src="https://github.com/user-attachments/assets/55958c46-6a05-4e41-ae46-e88bde925980" /> |
+|   <img width="485" height="890" alt="image" src="https://github.com/user-attachments/assets/7e1a44df-2725-411c-b49b-a062c9e041da" /> |   <img width="493" height="890" alt="image" src="https://github.com/user-attachments/assets/0deef860-9597-49fe-9fe4-76ac041089ab" />
+ |
 </div>
 
 ## Pages & Components
@@ -80,10 +81,13 @@ npx expo start --clear
 
 | Worker Form | Worker Dashboard |
 | :---: | :---: |
-|   <img width="480" height="750" alt="image" src="https://github.com/user-attachments/assets/fbee9b48-ed1f-405a-ab2f-4b5b13676ff6" /> |   <img width="494" height="750" alt="image" src="https://github.com/user-attachments/assets/55958c46-6a05-4e41-ae46-e88bde925980" /> |
+|   <img width="471" height="873" alt="image" src="https://github.com/user-attachments/assets/6d523f39-b12f-4cdc-810d-2d32f6820ae1" /> |  <img width="483" height="892" alt="image" src="https://github.com/user-attachments/assets/ccee61e8-c32e-4c97-8bd2-5508587ab443" />
+ |
 
 </div>
+
 ### Assumptions
+
 - Provider data is mocked (20 providers, 5 areas)
 - Reminders are simulated, not push notifications
 - Antigravity orchestrates all 3 agent steps
