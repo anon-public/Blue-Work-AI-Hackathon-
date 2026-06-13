@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
     StyleSheet,
     View,
@@ -8,12 +9,13 @@ import {
     ActivityIndicator,
     KeyboardAvoidingView,
     Platform,
-    TouchableWithoutFeedback,
-    Keyboard
+    Keyboard,
+    Pressable
 } from 'react-native';
+
 import { API_BASE_URL } from '../config';
 
-export default function InputScreen({ navigation, setLastResult }) {
+export default function InputScreen({ navigation }) {
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -36,7 +38,7 @@ export default function InputScreen({ navigation, setLastResult }) {
             const data = await response.json();
 
             if (response.ok) {
-                setLastResult(data);
+                // setLastResult(data);
                 navigation.navigate('Results', { apiResponse: data });
             } else {
                 setError(data.error || 'Something went wrong. Please try again.');
@@ -49,43 +51,45 @@ export default function InputScreen({ navigation, setLastResult }) {
     };
 
     return (
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-            <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-                style={styles.container}
-            >
-                <View style={styles.inner}>
-                    <Text style={styles.title}>What do you need help with?</Text>
-                    <Text style={styles.subtitle}>Describe the service you are looking for in your own words.</Text>
+        <SafeAreaView>
+            <Pressable onPress={Keyboard.dismiss}>
+                <KeyboardAvoidingView
+                    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+                    style={styles.container}
+                >
+                    <View style={styles.inner}>
+                        <Text style={styles.title}>What do you need help with?</Text>
+                        <Text style={styles.subtitle}>Describe the service you are looking for in your own words.</Text>
 
-                    <View style={styles.inputContainer}>
-                        <TextInput
-                            style={styles.input}
-                            placeholder="e.g. Mujhe kal subah G-13 mein AC technician chahiye..."
-                            placeholderTextColor="#9ca3af"
-                            multiline
-                            textAlignVertical="top"
-                            value={message}
-                            onChangeText={setMessage}
-                        />
+                        <View style={styles.inputContainer}>
+                            <TextInput
+                                style={styles.input}
+                                placeholder="e.g. Mujhe kal subah G-13 mein AC technician chahiye..."
+                                placeholderTextColor="#9ca3af"
+                                multiline
+                                textAlignVertical="top"
+                                value={message}
+                                onChangeText={setMessage}
+                            />
+                        </View>
+
+                        {error && <Text style={styles.errorText}>{error}</Text>}
+
+                        <Pressable
+                            style={[styles.button, !message.trim() && styles.buttonDisabled]}
+                            onPress={handleFindService}
+                            disabled={loading || !message.trim()}
+                        >
+                            {loading ? (
+                                <ActivityIndicator color="#fff" />
+                            ) : (
+                                <Text style={styles.buttonText}>Find Service</Text>
+                            )}
+                        </Pressable>
                     </View>
-
-                    {error && <Text style={styles.errorText}>{error}</Text>}
-
-                    <TouchableOpacity
-                        style={[styles.button, !message.trim() && styles.buttonDisabled]}
-                        onPress={handleFindService}
-                        disabled={loading || !message.trim()}
-                    >
-                        {loading ? (
-                            <ActivityIndicator color="#fff" />
-                        ) : (
-                            <Text style={styles.buttonText}>Find Service</Text>
-                        )}
-                    </TouchableOpacity>
-                </View>
-            </KeyboardAvoidingView>
-        </TouchableWithoutFeedback>
+                </KeyboardAvoidingView>
+            </Pressable>
+        </SafeAreaView>
     );
 }
 
